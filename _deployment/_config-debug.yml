@@ -1,0 +1,19 @@
+﻿permalink: /p/:year/:month/:day/:title
+pygments: true
+
+title: blog.gehtnicht.at
+baseurl: /
+url: http://localhost:4000
+
+excerpt_separator: <!--break-->
+paginate: 5
+paginate_path: "index/:num"
+
+exclude: ['*.lnk']
+images: /posts/img
+
+encoding: utf-8
+
+
+show_drafts: true
+is-debug: true
