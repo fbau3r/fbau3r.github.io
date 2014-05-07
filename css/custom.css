@@ -1,0 +1,102 @@
+/*
+	needed for vertical scrollbar
+	to be always visible because else the tab-table
+	"jumps around" when changing between scrollable pages
+	and content that fits to page...
+*/
+html									{ overflow-y: scroll; }
+body									{ font-family: "Georgia", "Times New Roman", "Times", serif; }
+
+/* TODO
+a:link									{ border-radius: 5px; padding: 2px 5px; }
+a:hover									{ background: #593662; color: #fff; text-decoration: underline; border-bottom: 1px solid #ccc; transition: all .15s ease-in-out; }
+.x										{ background: linear-gradient(#fff, #593662); }
+*/
+
+
+
+/* navigation */
+ol.navigation							{ margin: 15px 0 20px 0; padding: 0; }
+ol.navigation li						{ background: #f9f5ff; margin: 1px; float: left; list-style-type: none; list-style-position: inside; color: gray; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 3px 10px; border-bottom: 2px solid #f9f5ff; }
+ol.navigation li a						{ color: inherit; text-decoration: none; }
+ol.navigation li:hover					{ background: #593662; color: #fff; transition: all .75s ease-in-out, border .15s ease-in-out; border-bottom: 2px solid #593662; }
+ol.navigation li.active					{ background: #593662; color: #fff; border-bottom: 2px solid #593662; }
+.active a:link, .active a:visited		{ text-decoration: none; color: inherit; cursor: default; }
+/* http://mdo.github.io/wtf-html-css/#floats-clearing */
+ol.navigation:before,
+ol.navigation:after						{ content: ' '; display: block; }
+ol.navigation:after						{ clear: both; margin: 0 0 5px 0; }
+
+
+
+table									{ border: 0 none; border-top: 1px solid #aaa;border-left: 1px solid #aaa; border-spacing: 0; }
+table th, table td						{ border: 0 none; border-right: 1px solid #aaa;border-bottom: 1px solid #aaa; }
+table th								{ text-align: left; color: #33a; background: #eef; }
+
+
+
+/* highlighting */
+.highlight								{ color: #f00; font-style: normal; }
+
+
+
+/* project-hub */
+.tl-node:before							{ background: #bbf; }
+.tl-author								{ color: #55f; }
+.tl-helper								{ color: gray; font-style: italic; }
+.tl-author, .tl-helper					{ font-size: 0.7em; float: left; padding: 0; }
+.tl-helper:before						{ content: ', '; padding-right: 5px; }
+.tl-author + .tl-content, .tl-helper + .tl-content
+										{ clear: both; }
+.tl-content + .tl-content				{ margin-top: 5px; }
+
+
+
+hr										{ border-bottom: 1px solid #ccc; }
+
+
+
+div#header								{ position: absolute; position: fixed; left: 0; top: 0; width: 100%; color: #fff; background: #593662; background: linear-gradient(#593662, #593662, #593662, #593662, #593662, transparent); }
+body									{ margin-top: 63px; }
+div#header h1							{ color: inherit; margin: 0 auto; max-width: 960px; line-height: 93px;
+										  font-size: 1.8em; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+										  text-align: left; font-weight: normal; }
+div#header h1 img						{ float: left; margin: 5px 25px 5px 0; }
+div#header a							{ color: inherit; text-decoration: none; }
+div.meta								{ position: absolute; position: fixed; top: 0; right: 0; margin: 5px; font-size: .8em; }
+div.meta, div.meta a					{ color: #777; }
+
+
+
+div.post	 img						{ margin: 0 5px 0 0; max-width: 475px; }
+div.post + *							{ clear: both; }
+
+
+
+div.more								{ font-size: .8em; }
+div.more .page-number					{ margin: 0 3px; }
+
+
+
+/* special style for overview on index page */
+ul.index								{ list-style-type: none; margin: 0; padding: 0; }
+ul.index h3								{ margin: 0; padding: 0; }
+ul.index h3 a							{ color: inherit; }
+abbr									{ font-size: .8em; color: #888; }
+abbr img.author							{ width: 20px; height: 20px; border: 0; float: left; margin: 0 5px 0 0; }
+abbr a									{ color: inherit; }
+ul.index p								{ margin: 2px 0; }
+ul.index li								{ margin: 0 0 35px 0; }
+
+/* special style for overview on index-titles page */
+ul.index.titles h3						{ float: left; overflow: hidden; font-size: .75em; width: 75%; }
+ul.index.titles abbr					{ float: left; }
+ul.index.titles li						{ margin: 0; }
+ul.index.titles div.more				{ display: none; }
+/* http://mdo.github.io/wtf-html-css/#floats-clearing */
+ul.index.titles li:before,
+ul.index.titles li:after				{ content: ' '; display: block; }
+ul.index.titles li:after				{ clear: both; margin: 0 0 5px 0; }
+
+/* intensedebate: no threaded answers available */
+#idc-container .idc-btn_s				{ display: none; }

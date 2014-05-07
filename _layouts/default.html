@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	<meta name="author" content="Florian Bauer, gehtnicht.at" />
+
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/markdownpad-github.css" />
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/pygments-syntax.css" />
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/custom.css" />
+
+	<link href="{{ site.baseurl }}img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="{{ site.baseurl }}feed.xml" rel="alternate" type="application/rss+xml" />
+</head>
+<body>
+	<div id="header">
+		<h1>
+			<a href="{{ site.baseurl }}">{{ site.title }}</a>
+		</h1>
+	</div>
+
+	<ol class="navigation">
+		<li{% if page.url contains "/index.html" or page.url == site.baseurl or paginator.page > 1 %} class="active"{% endif %}>
+			<a href="{{ site.baseurl }}">Inhalt</a>
+		</li>
+		<li{% if page.url contains "/titles.html" %} class="active"{% endif %}>
+			<a href="{{ '/titles.html' | prepend: site.baseurl | replace: '//', '/' }}">All entries</a>
+		</li>
+	{% for chapter in site.tags.sticky %}
+		<li{% if page.url == chapter.url %} class="active"{% endif %}>
+			<a href="{{ chapter.url | prepend: site.baseurl | replace: '//', '/' }}">{{ chapter.title }}</a>
+		</li>
+	{% endfor %}
+	</ol>
+
+	<h2>{{ page.title }}</h2>
+
+	{{ content }}
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-50765102-1', 'gehtnicht.at');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
