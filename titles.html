@@ -1,0 +1,18 @@
+---
+layout: default
+title: Titelliste
+---
+
+<p>Auf dieser Seite finden sich alle {{site.posts | size}} Titel in chronologisch absteigeneder Reihenfolge mit Datum und Autor.</p>
+
+
+
+<ul class="index titles">
+	{% for post in site.posts %}
+	<li>
+		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		{% include authordata.html %}
+		<div class="more"><a class="more" href="{{ post.url }}">Weiterlesen</a></div>
+	</li>
+	{% endfor %}
+</ul>
