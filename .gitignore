@@ -1,0 +1,5 @@
+*.lnk
+_site/
+
+#Windows Thumbnails ignorieren
+Thumbs.db
