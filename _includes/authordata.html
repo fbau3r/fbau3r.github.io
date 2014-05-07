@@ -1,0 +1,9 @@
+{% for authorData in site.data.authors %}
+	{% if authorData.id == post.author or authorData.id == page.author %}
+		<abbr>
+			<img src="{{ authorData.gravatar }}" class="author" alt="{{ authorData.name }}" />
+			<a href="mailto:{{authorData.email}}">{{ authorData.name }}</a>,
+			{% if post.date %}{{ post.date | date: "%d.%m.%Y" }}{% elsif page.date %}{{ page.date | date: "%d.%m.%Y" }}{% endif %}
+		</abbr>
+	{% endif %}
+{% endfor %}
