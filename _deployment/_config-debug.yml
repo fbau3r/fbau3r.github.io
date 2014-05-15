@@ -10,7 +10,7 @@ paginate: 5
 paginate_path: "index/:num"
 
 exclude: ['*.lnk']
-images: /posts/img
+images: /files
 
 encoding: utf-8
 
