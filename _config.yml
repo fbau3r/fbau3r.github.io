@@ -13,3 +13,4 @@ exclude: ['*.lnk', '*.debug.html']
 images: /files
 
 encoding: utf-8
+markdown: kramdown
