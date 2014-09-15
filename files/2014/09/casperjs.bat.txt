@@ -1,0 +1,4 @@
+@ECHO OFF
+
+REM This batch is a workaround so ANSICON can parse the output of phantomjs
+ansicon phantomjs C:\tools\casperjs\bin\bootstrap.js --casper-path=C:\tools\casperjs --cli test "%~1"
