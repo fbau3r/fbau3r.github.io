@@ -29,7 +29,7 @@ Prepend text to commit messages (from master branch to HEAD):
 
 Append text to commit messages (from master branch to HEAD):
 
-	git filter-branch --msg-filter 'cat && echo. && echo "Suffix, separated by empty newline"' master..HEAD`
+	git filter-branch --msg-filter 'cat && echo. && echo "Suffix, separated by empty newline"' master..HEAD
 
 
 
@@ -37,7 +37,14 @@ Append text to commit messages (from master branch to HEAD):
 
 A little later, I needed the following Stackoverflow articles:
 
-- `git filter-branch` creates backups of the branches before it rewrites them. How to remove that backup?  
-	[Remove refs/original/heads/master from git repo after filter-branch --tree-filter?](http://stackoverflow.com/a/7654880)
-- In case `git filter-branch` must be undone, a `git reset --hard HEAD@{1}` comes to the rescue  
-	[Undoing a git rebase](http://stackoverflow.com/a/135614) (`git reflog`)
+### Remove backup branches
+
+`git filter-branch` creates backups of the branches before it rewrites them. How to remove that backup?  
+[Remove refs/original/heads/master from git repo after filter-branch --tree-filter?](http://stackoverflow.com/a/7654880)
+
+Sample: `git update-ref -d refs/original/refs/heads/my-branch`
+
+### Undo filter-branch
+
+In case `git filter-branch` must be undone, a `git reset --hard HEAD@{1}` comes to the rescue  
+[Undoing a git rebase](http://stackoverflow.com/a/135614) (with the help of `git reflog`)
