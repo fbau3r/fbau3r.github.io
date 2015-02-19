@@ -1,5 +1,5 @@
 ﻿permalink: /p/:year/:month/:day/:title
-pygments: true
+highlighter: pygments
 
 title: blog.gehtnicht.at
 baseurl: /
