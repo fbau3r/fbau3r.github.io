@@ -21,15 +21,21 @@ This blog article from gaffo came in handy:
 
 Prepend and append text to commit messages (from master branch to HEAD):
 
-	git filter-branch --msg-filter 'echo -n "Prefix: " && cat && echo. && echo "Suffix, separated by empty newline"' master..HEAD
+{% highlight bash %}
+git filter-branch --msg-filter 'echo -n "Prefix: " && cat && echo. && echo "Suffix, separated by empty newline"' master..HEAD
+{% endhighlight %}
 
 Prepend text to commit messages (from master branch to HEAD):
 
-	git filter-branch --msg-filter 'echo -n "Prefix: " && cat' master..HEAD
+{% highlight bash %}
+git filter-branch --msg-filter 'echo -n "Prefix: " && cat' master..HEAD
+{% endhighlight %}
 
 Append text to commit messages (from master branch to HEAD):
 
-	git filter-branch --msg-filter 'cat && echo. && echo "Suffix, separated by empty newline"' master..HEAD
+{% highlight bash %}
+git filter-branch --msg-filter 'cat && echo. && echo "Suffix, separated by empty newline"' master..HEAD
+{% endhighlight %}
 
 
 
@@ -42,7 +48,10 @@ A little later, I needed the following Stackoverflow articles:
 `git filter-branch` creates backups of the branches before it rewrites them. How to remove that backup?  
 [Remove refs/original/heads/master from git repo after filter-branch --tree-filter?](http://stackoverflow.com/a/7654880)
 
-Sample: `git update-ref -d refs/original/refs/heads/my-branch`
+Sample:
+{% highlight bash %}
+git update-ref -d refs/original/refs/heads/my-branch
+{% endhighlight %}
 
 ### Undo filter-branch
 

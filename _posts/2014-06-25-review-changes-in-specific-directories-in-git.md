@@ -11,9 +11,11 @@ Two handy aliases which show all changes between current `HEAD` revision and the
 
 
 
-	[alias]
-		rv = log HEAD..origin/master --reverse --stat --ignore-space-at-eol -b -- Folder1/ Folder2/Subfolder/ Folder3/
-		rc = "!git log HEAD..origin/master --oneline --ignore-space-at-eol -b -- Folder1/ Folder2/Subfolder/ Folder3/ | wc -l"
+{% highlight ini %}
+[alias]
+rv = log HEAD..origin/master --reverse --stat --ignore-space-at-eol -b -- Folder1/ Folder2/Subfolder/ Folder3/
+rc = "!git log HEAD..origin/master --oneline --ignore-space-at-eol -b -- Folder1/ Folder2/Subfolder/ Folder3/ | wc -l"
+{% endhighlight %}
 
 
 
