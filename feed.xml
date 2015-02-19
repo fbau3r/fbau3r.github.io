@@ -1,5 +1,5 @@
 ---
-layout: none
+layout:
 source: https://github.com/snaptortoise/jekyll-rss-feeds
 ---
 <?xml version="1.0" encoding="utf-8"?>
