@@ -86,7 +86,7 @@ abbr									{ font-size: .8em; color: #888; }
 abbr img.author							{ width: 20px; height: 20px; border: 0; float: left; margin: 0 5px 0 0; }
 abbr a									{ color: inherit; }
 ul.index p								{ margin: 2px 0; }
-ul.index li								{ margin: 0 0 35px 0; }
+ul.index > li							{ margin: 0 0 35px 0; }
 
 /* special style for overview on index-titles page */
 ul.index.titles h3						{ float: left; overflow: hidden; font-size: .75em; width: 75%; }
