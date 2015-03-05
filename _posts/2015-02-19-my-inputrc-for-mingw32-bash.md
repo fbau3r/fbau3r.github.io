@@ -13,14 +13,14 @@ I've picked some commands I like and put them in my [.inputrc]({{ site.images }}
 
 set completion-ignore-case on
 
-"\e[[E":	re-read-init-file			# F5
-"\e[1~":	beginning-of-line			# Home
-"\e[4~":	end-of-line					# End
-"\e[2~":	paste-from-clipboard		# Insert
-"\e[5~":	history-search-backward		# Page up
-"\e[6~":	history-search-forward		# Page down
-"\M-\e[D":	backward-word				# Alt-LeftArrow
-"\M-\e[C":	forward-word				# Alt-RightArrow
+"\e[[E":    re-read-init-file           # F5
+"\e[1~":    beginning-of-line           # Home
+"\e[4~":    end-of-line                 # End
+"\e[2~":    paste-from-clipboard        # Insert
+"\e[5~":    history-search-backward     # Page up
+"\e[6~":    history-search-forward      # Page down
+"\M-\e[D":  backward-word               # Alt-LeftArrow
+"\M-\e[C":  forward-word                # Alt-RightArrow
 {% endhighlight %}
 
 
