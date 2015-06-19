@@ -1,0 +1,2 @@
+# source http://unix.stackexchange.com/a/1979
+alias beep='echo -e "\a"'
