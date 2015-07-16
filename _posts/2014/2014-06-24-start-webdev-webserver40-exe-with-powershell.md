@@ -3,6 +3,7 @@ layout: post
 title: Start WebDev.WebServer40.EXE with Powershell
 author: fbauer
 tags: [powershell]
+permalink: /p/2014/06/24/start-webdev-webserver40-exe-with-powershell/
 ---
 
 Start `WebDev.WebServer40.exe` from _Microsoft Visual Studio 2012_, if it is not yet running. The function starts the webserver if it was not yet started.

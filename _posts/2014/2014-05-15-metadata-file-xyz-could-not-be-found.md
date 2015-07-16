@@ -3,6 +3,7 @@ layout: post
 title: "Metadata file 'XYZ' could not be found"
 author: fbauer
 tags: [visual studio]
+permalink: /p/2014/05/15/metadata-file-xyz-could-not-be-found/
 ---
 
 Sometimes Visual Studio aborts building a Solution with the error message  

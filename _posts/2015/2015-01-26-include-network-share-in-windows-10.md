@@ -3,6 +3,7 @@ layout: post
 title: Include network share in Windows 10
 author: fbauer
 tags: [windows10]
+permalink: /p/2015/01/26/include-network-share-in-windows-10/
 ---
 
 I tried to map a network drive to my computer. Windows 10 could not reconnect it after updating from Windows 7. So I assumed, something changed between the two windows versions and tried to reconnect the network drive manually:

@@ -3,6 +3,7 @@ layout: post
 title: Review changes in specific directories with git
 author: fbauer
 tags: [git]
+permalink: /p/2014/06/25/review-changes-in-specific-directories-in-git/
 ---
 
 Two handy aliases which show all changes between current `HEAD` revision and the remote branch `origin/master` for specific folders:

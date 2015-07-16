@@ -3,6 +3,7 @@ layout: post
 title: Central NuGet.config file
 author: fbauer
 tags: [nuget]
+permalink: /p/2015/04/03/central-nuget-config/
 ---
 
 At work we use a central `NuGet.config` file to configure additional NuGet repositories for all developer Machines and the CI-Build environment (see [Chaining multiple configuration files](http://docs.nuget.org/consume/nuget-config-file#chaining-multiple-configuration-files)).

@@ -3,6 +3,7 @@ layout: post
 title: My .inputrc for MINGW32 bash
 author: fbauer
 tags: [git, bash]
+permalink: /p/2015/02/19/my-inputrc-for-mingw32-bash/
 ---
 
 I've picked some commands I like and put them in my [.inputrc]({{ site.images }}/2015/inputrc.txt) (in directory found with `echo ~`)

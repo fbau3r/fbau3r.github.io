@@ -14,4 +14,4 @@ github_username:  fbau3r
 markdown: kramdown
 
 images: /files
-permalink: /p/:year/:month/:day/:title
+permalink: /p/:year/:year-:month-:day-:title.html

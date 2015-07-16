@@ -3,6 +3,7 @@ layout: post
 title: Bulk ammending commit messages in git
 author: fbauer
 tags: [git]
+permalink: /p/2014/10/23/bulk-ammending-commit-messages-in-git/
 ---
 
 At work we have a giant repository with many projects. Each commit is prefixed with the project and suffixed with an internal project number.
