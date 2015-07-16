@@ -13,4 +13,5 @@ github_username:  fbau3r
 # Build settings
 markdown: kramdown
 
+images: /files
 permalink: /p/:year/:month/:day/:title

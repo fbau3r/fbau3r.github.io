@@ -1,0 +1,13 @@
+# source http://superuser.com/a/589629
+# source http://www.gnu.org/software/bash/manual/bashref.html#Commands-For-History
+
+set completion-ignore-case on
+
+"\e[[E":	re-read-init-file			# F5
+"\e[1~":	beginning-of-line			# Home
+"\e[4~":	end-of-line					# End
+"\e[2~":	paste-from-clipboard		# Insert
+"\e[5~":	history-search-backward		# Page up
+"\e[6~":	history-search-forward		# Page down
+"\M-\e[D":	backward-word				# Alt-LeftArrow
+"\M-\e[C":	forward-word				# Alt-RightArrow
