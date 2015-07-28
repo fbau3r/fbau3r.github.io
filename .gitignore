@@ -1,5 +1,2 @@
-*.lnk
-_site/
-
-#Windows Thumbnails ignorieren
-Thumbs.db
+_site
+.sass-cache

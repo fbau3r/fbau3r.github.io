@@ -1,16 +1,18 @@
-﻿permalink: /p/:year/:month/:day/:title
-highlighter: pygments
-
+# Site settings
 title: blog.gehtnicht.at
-baseurl: /
-url: http://blog.gehtnicht.at
+email: florian.bauer@gehtnicht.at
+description: > # this means to ignore newlines until "baseurl:"
+  I am a software developer and I live in Austria, Vienna. This blog contains random unsorted
+  entries. I use it primarily for myself, but maybe the one or the other discovery will help you,
+  too!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.gehtnicht.at" # the base hostname & protocol for your site
+twitter_username: fbau3r
+github_username:  fbau3r
+resume_url: http://cv.gehtnicht.at/florian-bauer
 
-excerpt_separator: <!--break-->
-paginate: 10
-paginate_path: "index/:num"
-
-exclude: ['*.lnk', '*.debug.html']
-images: /files
-
-encoding: utf-8
+# Build settings
 markdown: kramdown
+
+images: /files
+permalink: /p/:year/:year-:month-:day-:title.html
