@@ -9,6 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.gehtnicht.at" # the base hostname & protocol for your site
 twitter_username: fbau3r
 github_username:  fbau3r
+resume_url: http://cv.gehtnicht.at/florian-bauer
 
 # Build settings
 markdown: kramdown
