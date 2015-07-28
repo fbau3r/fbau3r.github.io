@@ -15,6 +15,6 @@ Some positive side-effects are:
 So I forked [jglovier's repo](https://github.com/jglovier/resume-template), [adapted it to my needs](https://github.com/fbau3r/resume-template) an voilà:
 
 - [Magdalena Bauer's CV](http://cv.gehtnicht.at/magdalena-bauer)
-- [Florian Bauer's Resume](http://cv.gehtnicht.at/magdalena-bauer)
+- [Florian Bauer's Resume](http://cv.gehtnicht.at/florian-bauer)
 
 Thanks a lot!
