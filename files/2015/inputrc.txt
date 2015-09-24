@@ -9,5 +9,8 @@ set completion-ignore-case on
 "\e[2~":	paste-from-clipboard		# Insert
 "\e[5~":	history-search-backward		# Page up
 "\e[6~":	history-search-forward		# Page down
-"\M-\e[D":	backward-word				# Alt-LeftArrow
-"\M-\e[C":	forward-word				# Alt-RightArrow
+
+#	"\M-\e[D":	backward-word				# Alt-LeftArrow
+#	"\M-\e[C":	forward-word				# Alt-RightArrow
+"\e[1;5D":	backward-word				# Ctrl-LeftArrow
+"\e[1;5C":	forward-word				# Ctrl-RightArrow
