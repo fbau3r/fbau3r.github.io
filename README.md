@@ -1,6 +1,6 @@
 # Blog
 
-This is the repository for [blog.gehtnicht.at](http://blog.gehtnicht.at), maintained with jekyll.
+This is the repository for [blog.gehtnicht.at](https://blog.gehtnicht.at), maintained with jekyll.
 
 
 
