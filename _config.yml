@@ -6,10 +6,10 @@ description: > # this means to ignore newlines until "baseurl:"
   entries. I use it primarily for myself, but maybe the one or the other discovery will help you,
   too!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.gehtnicht.at" # the base hostname & protocol for your site
+url: "https://blog.gehtnicht.at" # the base hostname & protocol for your site
 twitter_username: fbau3r
 github_username:  fbau3r
-resume_url: http://cv.gehtnicht.at/florian-bauer
+resume_url: https://cv.gehtnicht.at/florian-bauer
 
 # Build settings
 markdown: kramdown
