@@ -1,0 +1,35 @@
+services:
+  web:
+    # source: https://hub.docker.com/hardened-images/catalog/dhi/nginx/images?distributions=alpine+3.23
+    image: dhi.io/nginx:1.30.5-alpine3.24
+    volumes:
+      - ./_site:/usr/share/nginx/html
+    ports:
+      - "127.0.0.1:8080:8080"
+
+  build:
+    # https://hub.docker.com/r/jekyll/jekyll/ which forwards to
+    # https://github.com/envygeeks/jekyll-docker/blob/master/README.md
+    image: jekyll/jekyll:4.4.1
+    volumes:
+      - ./:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
+    command: bundle exec jekyll build --watch
+
+  bundle-update:
+    # https://hub.docker.com/r/jekyll/jekyll/ which forwards to
+    # https://github.com/envygeeks/jekyll-docker/blob/master/README.md
+    image: jekyll/jekyll:4.4.1
+    volumes:
+      - ./:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
+    command: bundle update
+
+  bundle-install:
+    # https://hub.docker.com/r/jekyll/jekyll/ which forwards to
+    # https://github.com/envygeeks/jekyll-docker/blob/master/README.md
+    image: jekyll/jekyll:4.4.1
+    volumes:
+      - ./:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
+    command: bundle install
